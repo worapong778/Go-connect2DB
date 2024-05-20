@@ -30,7 +30,7 @@ func query(db *sql.DB) {
 }
 
 func main() {
-	db, err := sql.Open("mysql", "root:12345ter@tcp(127.0.0.1:3306)/coursebd")
+	db, err := sql.Open("mysql", "root:**@tcp(127.0.0.1:3306)/coursebd")
 	if err != nil {
 		fmt.Println("failed to connect")
 	} else {
